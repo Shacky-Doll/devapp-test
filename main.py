@@ -45,16 +45,6 @@ from PIL import Image
 st.write("DisplayImage")
 
 
-
-img = Image.open("/Users/shakuto/Downloads/pictures/IMG_5237 Small.jpeg")
-
-st.image(img, caption = "ひなこ", use_column_width = True)
-
-if st.checkbox("Show Image"):
-    img = Image.open("/Users/shakuto/Downloads/pictures/IMG_5237 Small.jpeg")
-    st.image(img, caption = "ひなこ", use_column_width = False)
-
-
 option = st.selectbox(
     "あなたの好きな数字を教えてください",
     list(range(1, 11))
